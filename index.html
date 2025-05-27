@@ -1,109 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Marcos Brito</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-        .container {
-            background: #fff;
-            color: #333;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 700px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-            text-align: center;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #2a5298;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #2a5298;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #1e3c72;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #2a5298;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        p, li {
-            text-align: justify;
-            line-height: 1.6;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .contact-btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background: #2a5298;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: background 0.3s;
-        }
-        .contact-btn:hover {
-            background: #1e3c72;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio - Marcos Brito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid red;
+    }
+    header h1 {
+      color: red;
+      font-size: 2em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #111;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: red;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: red;
+      border-bottom: 2px solid red;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid red;
+      display: block;
+      margin: 30px auto;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "▶ ";
+      color: red;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: red;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background: #ff3333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      border-top: 2px solid red;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="./images/WhatsApp Image 2025-05-20 at 10.08.20 (1).jpeg" alt="Foto de Marcos" class="profile-img">
-        <h1>Marcos V. de Oliveira Brito</h1>
-        <p>Estudante de Mecatrônica e Redes de Computadores | Futuro profissional de TI</p>
+  <header>
+    <h1>Marcos Brito</h1>
+    <p>Estudante de Mecatrônica & Redes de Computadores</p>
+  </header>
 
-        <h2>Bio</h2>
-        <p>Sou estudante no último ano do Ensino Médio integrado ao curso Técnico de Mecatrônica na ETEC Getúlio Vargas e também curso Técnico de Informática com ênfase em Redes de Computadores no SENAI. Busco atuar na área de Gerenciamento de Projetos ou TI, sempre desenvolvendo habilidades de organização, planejamento e colaboração em equipe.</p>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificacoes">Certificações</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-        <h2>Minha Stack Técnica</h2>
-        <ul>
-            <li>✅ Redes: Cisco CCNA, configuração de switches e roteadores.</li>
-            <li>✅ Nuvem: AWS Cloud Foundations.</li>
-            <li>✅ Segurança: SC-900 - Segurança e Compliance.</li>
-            <li>✅ Microsoft 365: MS-900.</li>
-            <li>✅ Programação e Automação: Mecatrônica e Informática.</li>
-            <li>✅ Ferramentas: Office, Google Drive, Trello.</li>
-        </ul>
+  <div class="container">
+    <img src="./images/WhatsApp Image 2025-05-20 at 10.08.20 (1).jpeg" alt="Foto de Marcos" class="profile-img">
 
-        <h2>Experiências e Conquistas</h2>
-        <ul>
-            <li>🏆 Participação em projetos técnicos e acadêmicos.</li>
-            <li>🏆 Certificações importantes na área de TI.</li>
-            <li>🏆 Desenvolvimento de apresentações e gestão de projetos escolares.</li>
-            <li>🏆 Cursos complementares: Administração, RH e Inglês.</li>
-        </ul>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou estudante no último ano do Ensino Médio integrado ao curso Técnico de Mecatrônica na ETEC Getúlio Vargas e também curso Técnico de Informática em Redes de Computadores no SENAI. Busco atuar na área de Gerenciamento de Projetos ou Tecnologia da Informação, sempre desenvolvendo habilidades de organização, planejamento e colaboração.</p>
+    </section>
 
-        <h2>Contato</h2>
-        <a href="mailto:marcosbrito0537@gmail.com" class="contact-btn">Email</a>
-        <a href="tel:+5511916643911" class="contact-btn">Telefone</a>
-    </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Redes de Computadores: Cisco CCNA, configuração de switches e roteadores.</li>
+        <li>Computação em Nuvem: Fundamentos AWS Cloud.</li>
+        <li>Segurança da Informação: SC-900, Microsoft Compliance.</li>
+        <li>Microsoft 365: MS-900.</li>
+        <li>Lógica de Programação e Automação: Mecatrônica e Informática.</li>
+        <li>Ferramentas: Office, Google Drive, Trello.</li>
+      </ul>
+    </section>
+
+    <section id="certificacoes">
+      <h2>Certificações</h2>
+      <ul>
+        <li>MS-900: Microsoft 365 Fundamentals — SENAI</li>
+        <li>SC-900: Microsoft Security, Compliance, and Identity Fundamentals — SENAI</li>
+        <li>CCNA — Cisco Networking Academy</li>
+        <li>AWS Cloud Foundations</li>
+        <li>Cursos FIC: Administração e RH — CAAP</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contato</h2>
+      <a href="mailto:marcosbrito0537@gmail.com">Email</a>
+      <a href="tel:+5511916643911">Telefone</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 - Marcos Brito | Portfólio</p>
+  </footer>
 
 </body>
 </html>
